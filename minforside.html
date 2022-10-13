@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Min Forside</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: green;
+            text-align: center;
+        }
+        div{
+            text-align: center;
+        }
+
+        li{
+            list-style: none;
+            font-size: 35px;
+        }
+        h1{
+            font-size: 50px;
+        }
+
+        html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.fotball {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg,#f2b84d 50%, rgb(98, 179, 233) 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.fotball2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.fotball3 {
+  animation-duration:5s;
+}
+
+.firkant {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="fotball"></div>
+    <div class="fotball fotball2"></div>
+    <div class="fotball fotball3"></div>
+    
+    <div class="firkant">
+        <h1 style="text-align:center;"> IT oppgaver og nettsider </h1>
+       <li> <a href="innleveringsopg.html">Innleveringsoppgave IT</a> </li>
+    </div>
+</body>
+</html>
